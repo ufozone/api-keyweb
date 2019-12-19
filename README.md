@@ -14,6 +14,9 @@ print_r($result);
 ```
 
 ### Get server properties
+*Function parameters*
+* Server ID
+
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
 $keyweb->debug(true);
@@ -23,6 +26,12 @@ print_r($result);
 ```
 
 ### Set server properties
+*Function parameters*
+* Server ID
+* rDNS for first IP address
+* rDNS for second IP address
+* Server Name as FQDN
+
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
 $keyweb->debug(true);
@@ -32,6 +41,9 @@ print_r($result);
 ```
 
 ### Get reset history by server
+*Function parameters*
+* Server ID
+
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
 $keyweb->debug(true);
@@ -41,6 +53,10 @@ print_r($result);
 ```
 
 ### Reset server
+*Function parameters*
+* Server ID
+* Customer Number (for reset history)
+
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
 $keyweb->debug(true);
@@ -50,6 +66,24 @@ print_r($result);
 ```
 
 ### Get traffic history by server
+*Function parameters*
+* Server ID
+* Type of history
+** today
+** yesterday
+** weekly
+** monthly
+** date
+** lastslots
+* Date (only neccesary by using type 'date')
+* Last slots (only neccesary by using type 'lastslots')
+
+*API response*
+Depending on which 'type' was chosen, you get different response formats.
+
+If you using the types {{today}}, {{yesterday}}, {{weekly}} or {{monthly}}, you will get a PNG graphic of the traffic history encoded in base64.
+In the other cases ({{date}}, {{lastslots}}), you get a tabular listing of the numeric traffic values.
+
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
 $keyweb->debug(true);
@@ -59,6 +93,11 @@ print_r($result);
 ```
 
 ### Set IP address reverse lookup
+*Function parameters*
+* Server ID
+* IP address
+* rDNS
+
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
 $keyweb->debug(true);
