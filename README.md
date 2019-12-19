@@ -69,5 +69,5 @@ print_r($result);
 
 ## External Resources
 
-* [Keyweb AG API Documentation](https://status.keyweb.de/API/Keyweb-ServerStatus-API.pdf
+* [Keyweb AG API Documentation](https://status.keyweb.de/API/Keyweb-ServerStatus-API.pdf)
 * [Keyweb AG Website](https://www.keyweb.de/de/)
