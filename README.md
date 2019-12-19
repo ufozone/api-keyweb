@@ -69,20 +69,20 @@ print_r($result);
 *Function parameters*
 * Server ID
 * Type of history
-** today
-** yesterday
-** weekly
-** monthly
-** date
-** lastslots
+⋅⋅⋅  today
+⋅⋅⋅  yesterday
+⋅⋅⋅  weekly
+⋅⋅⋅  monthly
+⋅⋅⋅  date
+⋅⋅⋅  lastslots
 * Date (only neccesary by using type 'date')
 * Last slots (only neccesary by using type 'lastslots')
 
 *API response*
 Depending on which 'type' was chosen, you get different response formats.
 
-If you using the types {{today}}, {{yesterday}}, {{weekly}} or {{monthly}}, you will get a PNG graphic of the traffic history encoded in base64.
-In the other cases ({{date}}, {{lastslots}}), you get a tabular listing of the numeric traffic values.
+If you using the types `today`, `yesterday`, `weekly` or `monthly`, you will get a PNG graphic of the traffic history encoded in base64.
+In the other cases (`date`, `lastslots`), you get a tabular listing of the numeric traffic values.
 
 ```php
 $keyweb = new Keyweb('23232', 'apiuser', 'apipass');
