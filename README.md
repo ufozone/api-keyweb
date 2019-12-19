@@ -14,7 +14,7 @@ print_r($result);
 ```
 
 ### Get server properties
-*Function parameters*
+#### Function parameters
 * Server ID
 
 ```php
@@ -26,7 +26,7 @@ print_r($result);
 ```
 
 ### Set server properties
-*Function parameters*
+#### Function parameters
 * Server ID
 * rDNS for first IP address
 * rDNS for second IP address
@@ -41,7 +41,7 @@ print_r($result);
 ```
 
 ### Get reset history by server
-*Function parameters*
+#### Function parameters
 * Server ID
 
 ```php
@@ -53,7 +53,7 @@ print_r($result);
 ```
 
 ### Reset server
-*Function parameters*
+#### Function parameters
 * Server ID
 * Customer Number (for reset history)
 
@@ -66,7 +66,7 @@ print_r($result);
 ```
 
 ### Get traffic history by server
-*Function parameters*
+#### Function parameters
 * Server ID
 * Type of history
   * today
@@ -78,7 +78,7 @@ print_r($result);
 * Date (only neccesary by using type 'date')
 * Last slots (only neccesary by using type 'lastslots')
 
-*API response*
+#### API response
 Depending on which 'type' was chosen, you get different response formats.
 
 If you using the types `today`, `yesterday`, `weekly` or `monthly`, you will get a PNG graphic of the traffic history encoded in base64.
@@ -93,7 +93,7 @@ print_r($result);
 ```
 
 ### Set IP address reverse lookup
-*Function parameters*
+#### Function parameters
 * Server ID
 * IP address
 * rDNS
