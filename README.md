@@ -69,12 +69,12 @@ print_r($result);
 *Function parameters*
 * Server ID
 * Type of history
-⋅⋅⋅  today
-⋅⋅⋅  yesterday
-⋅⋅⋅  weekly
-⋅⋅⋅  monthly
-⋅⋅⋅  date
-⋅⋅⋅  lastslots
+  * today
+  * yesterday
+  * weekly
+  * monthly
+  * date
+  * lastslots
 * Date (only neccesary by using type 'date')
 * Last slots (only neccesary by using type 'lastslots')
 
